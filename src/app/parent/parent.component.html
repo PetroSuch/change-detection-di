@@ -1,0 +1,7 @@
+<div>
+    <h2>Parent Component</h2>
+    <p>Data: {{ parentData }}</p>
+    <button (click)="updateParentData()">Update Parent Data</button>
+    <app-child [childData]="parentData"></app-child>
+</div>
+  

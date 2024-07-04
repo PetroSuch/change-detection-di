@@ -1,0 +1,32 @@
+<app-parent/>
+
+
+<br>
+<br>
+<br>
+<br>
+<h3>Change Detection Strategies Impact on Performance</h3>
+<ul>
+  <li><strong>Default Strategy</strong>: The default change detection strategy checks for changes in all components whenever any event occurs, which can lead to performance issues in large applications.</li>
+  <li><strong>OnPush Strategy</strong>: The OnPush strategy only checks for changes when input properties change or an event occurs within the component, making it more performant by reducing unnecessary checks.</li>
+</ul>
+
+<h3>Hierarchical Dependency Injection in Angular</h3>
+<h3>Root Level</h3>
+<p>Services provided at the root level are singleton instances shared across the entire application.</p>
+
+<h4>Parent Level</h4>
+<p>Services provided at the parent level are specific to the parent and its children, allowing for more fine-grained control and different instances per component tree.</p>
+
+<h4>Child Level</h4>
+<p>Services provided at the child level are specific to the child component, offering the most granular level of dependency injection.</p>
+
+<h3>Benefits and Use Cases of Hierarchical DI</h3>
+<ul>
+  <li><strong>Scoping Services:</strong> Hierarchical DI allows you to scope services to specific parts of your application, reducing memory usage and avoiding unintended shared state.</li>
+  <li><strong>Different Configurations:</strong> You can provide different configurations for the same service at different levels of your application.</li>
+  <li><strong>Testing:</strong> Hierarchical DI makes it easier to test components in isolation by providing mock services at the component level.</li>
+</ul>
+
+
+<img src="onpush.gif"> 
